@@ -1,0 +1,7 @@
+{
+  "name": "RandomUserAPI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
