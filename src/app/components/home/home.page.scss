@@ -1,0 +1,192 @@
+@media (max-width: 576px) {
+  ion-content {
+    font-size: 12px;
+  }
+  .name {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 576px) {
+  ion-content {
+    font-size: 16px;
+  }
+  .name {
+    font-size: 20px;
+  }
+}
+
+ion-header {
+  background-color: #f2f2f2;
+
+  ion-title {
+    font-size: 25px;
+    // font-family: Pacifico !important; // alternative font style
+  }
+}
+
+ion-toolbar {
+  ion-title {
+    text-align: center;
+  }
+
+  .toolbar-background {
+    background: var(--color-true-blue) !important;
+  }
+}
+
+ion-content {
+  --ion-background-color: #F2F2F2;
+}
+
+// gender
+.gender {
+  cursor: pointer;
+  margin: 10px 40px;
+
+  ion-row {
+    width: 100%;
+  }
+
+  ion-col {
+    display: flex;
+    border-radius: 5px;
+  }
+
+  div {
+    margin: auto 10px;
+    color: #FFF;
+  }
+
+  ion-checkbox {
+    --background: #FFF;
+    opacity: 1 !important;
+  }
+
+  .female {
+    margin-right: 15px;
+    background-color: var(--color-pink);
+
+    ion-checkbox {
+      --checkmark-color: var(--color-pink);
+      --background-checked: #FFF;
+      --border-color-checked: var(--color-pink);
+    }
+  }
+
+  .male {
+    background-color: var(--color-blue-jeans);
+
+    ion-checkbox {
+      --checkmark-color: var(--color-blue-jeans);
+      --background-checked: #FFF;
+      --border-color-checked: var(--color-blue-jeans);
+    }
+  }
+}
+// ***
+
+// image
+.col-img {
+  text-align: center;
+  padding: 0;
+  margin-left: 5px;
+
+  ion-icon {
+    font-size: 80px;
+    color: #F2F2F2 !important;
+  }
+}
+
+.profile-image {
+  border-radius: 50%;
+  margin: 10px 0;
+  width: 80px;
+}
+// ***
+
+// user list
+.list {
+  margin: 0 40px;
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 6px;
+
+  div {
+    margin: 3px 0;
+  }
+}
+// ***
+
+// user
+.user {
+  cursor: pointer;
+
+  ion-icon {
+    color: var(--color-true-blue);
+  }
+}
+
+.bottom-line {
+  border-bottom: solid 2px #f2f2f2;
+}
+
+.user:hover {
+  border-radius: 5px;
+  color: #FFF;
+
+  ion-icon {
+    color: #FFF;
+  }
+}
+
+.user:not(.l-female):hover {
+  background-color: var(--color-blue-jeans);
+}
+
+.user:not(.l-male):hover {
+  background-color: var(--color-pink);
+}
+
+.info {
+  margin: auto 0 auto 5px;
+  text-align: left;
+}
+
+.name {
+  font-weight: bold;
+  margin: 10px 0;
+}
+// ***
+
+// load button
+.load-more {
+  margin: 10px 40px;
+
+  ion-button {
+    width: 100%;
+  }
+}
+// 
+
+// loading
+.loading {
+  margin: 10px;
+  display: flex;
+  background-color: #FFF;
+  padding: 10px 27px;
+  border-radius: 5px;
+
+  div {
+    margin: auto;
+    display: flex;
+  }
+
+  ion-label {
+    height: 100%;
+    display: block;
+    width: 70px;
+    margin: auto;
+  }
+}
+// ***

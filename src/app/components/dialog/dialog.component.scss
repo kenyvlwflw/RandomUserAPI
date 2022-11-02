@@ -1,0 +1,70 @@
+h2 {
+    margin: 0 auto;
+}
+
+b {
+    margin-right: 5px;
+}
+
+h4 {
+    text-align: center;
+}
+
+ion-row {
+    margin: 12px 20px;
+
+    ion-col {
+        padding: 0;
+    }
+}
+
+button {
+    display: block;
+    margin: auto;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+button:focus-visible {
+    border: none !important;
+}
+
+ion-footer {
+    .footer-button {
+        padding: 0 65px;
+    }
+
+    ion-button {
+        width: 100%;
+    }
+}
+
+.profile-image {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+.contact {
+    margin-top: 15px;
+}
+
+.right {
+    display: block;
+    text-align: right;
+}
+
+.user {
+    margin-top: 20px;
+
+    div {
+        border-bottom: solid 1px #f2f2f2;
+    }
+}

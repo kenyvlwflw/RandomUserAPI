@@ -1,0 +1,81 @@
+<ion-content class="ion-padding">
+  <div class="user" *ngIf="user">
+
+    <img *ngIf="user.picture && user.picture.large" class="profile-image" [src]="user.picture.large" alt="image">
+    <ion-icon *ngIf="!user.picture" class="profile-image" name="person-circle-outline"></ion-icon>
+    
+    <div *ngIf="user.name && (user.name.first || user.name.last)">
+      <ion-row>
+        <h2>{{ user.name.first ? user.name.first : '' }} {{ user.name.last ? (' ' + user.name.last) : '' }}</h2>
+      </ion-row>
+    </div>
+
+    <div *ngIf="user.gender">
+      <ion-row>
+        <b>Gender</b> {{ user.gender }}
+      </ion-row>
+    </div>
+
+    <div *ngIf="user.id && (user.id.name || user.id.value)">
+      <ion-row>
+        <b>{{ user.id.name }}</b>
+        {{ user.id.value }}
+      </ion-row>
+    </div>
+
+    <div *ngIf="birthday || (user.dob && user.dob.age)">
+      <ion-row *ngIf="birthday">
+        <b>Birthday </b> {{ birthday }}
+      </ion-row>
+
+      <ion-row *ngIf="user.dob.age" size="4">
+        <b>Age </b> {{ user.dob.age }} years
+      </ion-row>
+    </div>
+  
+    <div *ngIf="user.location && (user.location.city ||user.location.state || user.location.country)" class="location">
+      <h4>Location</h4>
+      <ion-row *ngIf="user.location.city">
+        <b>City</b> {{ user.location.city }}
+      </ion-row>
+
+      <ion-row *ngIf="user.location.state">
+        <b>State</b> {{ user.location.state }}
+      </ion-row>
+
+      <ion-row *ngIf="user.location.country">
+        <b>Country</b> {{ user.location.country }}
+      </ion-row>
+    </div>
+    
+    <div *ngIf="user.email || user.phone" class="contact">
+      <h4>Contact</h4>
+      <ion-row *ngIf="user.email">
+        <b>Email</b> {{ user.email }}
+      </ion-row>
+  
+      <ion-row *ngIf="user.phone">
+        <b>Phone</b> {{ user.phone }}
+      </ion-row>
+    </div>
+
+    <div *ngIf="registeredDate || (user.registered && user.registered.age)" class="registered">
+      <h4>Registered</h4> 
+      <ion-row *ngIf="registeredDate">
+        <b>Date</b> {{ registeredDate }}
+      </ion-row>
+      
+      <ion-row *ngIf="user.registered.age">
+        <b>Age</b> {{ user.registered.age }}
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer-button">
+    <ion-button (click)="Close()">
+      Close
+    </ion-button>
+  </div>
+</ion-footer>
