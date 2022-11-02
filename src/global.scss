@@ -1,13 +1,4 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
@@ -24,3 +15,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+	--color-true-blue: #3066BE;
+	--color-blue-jeans: #60AFFF;
+	--color-pink: #FFB1CB;
+}
+
+@font-face {   
+	font-family: 'Pacifico';
+	src: url('/assets/font/Pacifico-Regular.ttf');
+}
