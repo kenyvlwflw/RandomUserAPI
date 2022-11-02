@@ -1,2 +1,7 @@
 # RandomUserAPI
-![Screen 1](/src/assets/screen1 "Home")
+
+![](/src/assets/img/screen_1.png)
+
+![](/src/assets/img/screen_2.png)
+
+![](/src/assets/img/screen_3.png)
